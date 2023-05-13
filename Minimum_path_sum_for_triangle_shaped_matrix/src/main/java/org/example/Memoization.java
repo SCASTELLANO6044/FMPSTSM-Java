@@ -29,7 +29,7 @@ public class Memoization {
         if (matrixIndex.getX() == matrix.length - 2) {
 
             result = matrix[matrixIndex.getX()][matrixIndex.getY()] +
-                    min(matrix[matrixIndex.getX() + 1][matrixIndex.getY()],
+                    Integer.min(matrix[matrixIndex.getX() + 1][matrixIndex.getY()],
                             matrix[matrixIndex.getX() + 1][matrixIndex.getY()+1]);
 
         }else {
@@ -39,18 +39,9 @@ public class Memoization {
             Integer downElement = memoization(matrix, memoizationDictionary, downMatrixIndex);
             Integer rightDownElement = memoization(matrix, memoizationDictionary, rightDownMatrixIndex);
 
-            result = matrix[matrixIndex.getX()][matrixIndex.getY()] + min(downElement, rightDownElement);
+            result = matrix[matrixIndex.getX()][matrixIndex.getY()] + Integer.min(downElement, rightDownElement);
         }
         memoizationDictionary.put(matrixIndex, result);
         return result;
-    }
-
-
-    private static Integer min(Integer firstOperand, Integer secondOperand){
-        if(firstOperand < secondOperand){
-            return firstOperand;
-        }else {
-            return secondOperand;
-        }
     }
 }
