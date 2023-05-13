@@ -3,8 +3,8 @@ package org.example;
 import java.util.Objects;
 
 public class MatrixIndex {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public MatrixIndex(int x, int y) {
         this.x = x;
