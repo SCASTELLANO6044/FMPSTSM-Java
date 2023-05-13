@@ -1,11 +1,10 @@
 package org.example;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-        int [][] matrix = {{4},{1, 3},{1, 2, 1}, {8, 4, 5, 1}};
+    public static void main(String[] args) throws IOException {
+        int [][] matrix = FileInputReader.readMatrixFromFile("C:\\GitHubProjects\\minimum-path-sum-for-triangle-shaped-matrix\\Minimum_path_sum_for_triangle_shaped_matrix\\input-files\\2.txt");
 
         String memoization = Memoization.execute(matrix);
         System.out.println("Memoization:\n" + memoization);

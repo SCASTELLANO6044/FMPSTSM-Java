@@ -31,7 +31,7 @@ public class Tabulation {
 
     private static String pathChosen(int[][] table, int[][] originalMatrix){
         List<MatrixIndex> matrixIndexList = new ArrayList<>(table.length);
-        for (int i = 0; i < table.length; i++){
+        for (int i = 0; i < table.length-1; i++){
             int lessValueItem = Integer.MAX_VALUE;
             int y = -1;
             for(int j = 0; j <= i; j++){
@@ -41,6 +41,17 @@ public class Tabulation {
                 }
             }
             matrixIndexList.add(new MatrixIndex(i, y));
+        }
+
+        if (table[matrixIndexList.get(matrixIndexList.size()-1).getX()+1]
+                [matrixIndexList.get(matrixIndexList.size()-1).getY()] <
+                table[matrixIndexList.get(matrixIndexList.size()-1).getX()+1]
+                        [matrixIndexList.get(matrixIndexList.size()-1).getY()+1]){
+            matrixIndexList.add(new MatrixIndex(matrixIndexList.get(matrixIndexList.size()-1).getX()+1,
+                    matrixIndexList.get(matrixIndexList.size()-1).getY()));
+        }else {
+            matrixIndexList.add(new MatrixIndex(matrixIndexList.get(matrixIndexList.size()-1).getX()+1,
+                    matrixIndexList.get(matrixIndexList.size()-1).getY()+1));
         }
 
         StringBuilder stringBuilder = new StringBuilder();
