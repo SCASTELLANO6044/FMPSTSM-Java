@@ -8,7 +8,8 @@ public class Main {
         int [][] matrix = {{4},{1, 3},{1, 2, 1}, {8, 4, 5, 1}};
 
         MatrixIndex matrixIndex = new MatrixIndex(0, 0);
-        Map<MatrixIndex, Integer> memoizationDictionary = new HashMap<MatrixIndex, Integer>();
+        Map<MatrixIndex, Integer> memoizationDictionary = new HashMap<>();
+
         String memoization = Memoization.execute(matrix, memoizationDictionary, matrixIndex);
         System.out.println("Memoization:\n" + memoization);
         System.out.println("****************************************");
