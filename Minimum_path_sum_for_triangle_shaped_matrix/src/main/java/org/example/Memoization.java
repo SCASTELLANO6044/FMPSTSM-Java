@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Memoization {
@@ -8,9 +9,11 @@ public class Memoization {
         throw new IllegalStateException("Utility class");
     }
 
-    public static String execute(int[][] matrix,
-                                 Map<MatrixIndex, Integer> memoizationDictionary,
-                                 MatrixIndex matrixIndex){
+    public static String execute(int[][] matrix){
+
+        MatrixIndex matrixIndex = new MatrixIndex(0, 0);
+        Map<MatrixIndex, Integer> memoizationDictionary = new HashMap<>();
+
         Integer memoizationResult = memoization(matrix, memoizationDictionary, matrixIndex);
         return String.valueOf(memoizationResult);
     }
@@ -20,7 +23,6 @@ public class Memoization {
                                        MatrixIndex matrixIndex){
 
         if(memoizationDictionary.containsKey(matrixIndex)){
-            System.out.println("***Result found on dictionary***");
             return memoizationDictionary.get(matrixIndex);
         }
 
