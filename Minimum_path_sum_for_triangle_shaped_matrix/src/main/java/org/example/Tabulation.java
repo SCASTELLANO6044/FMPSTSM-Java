@@ -10,9 +10,10 @@ public class Tabulation {
 
     public static String execute(int[][] matrix){
         int [][] tabulation = tabulation(matrix);
-        String resultMessage = "The result value is: "+ tabulation[0][0];
-        resultMessage += " and the path chosen is: " + pathChosen(tabulation, matrix);
-        return resultMessage;
+
+        return "The result value is: "+ tabulation[0][0] +
+                " and the path chosen is: " +
+                pathChosen(tabulation, matrix);
     }
 
     private static int[][] tabulation(int[][]matrix){
