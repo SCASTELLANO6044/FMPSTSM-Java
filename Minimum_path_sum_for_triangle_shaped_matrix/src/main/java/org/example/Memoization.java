@@ -3,11 +3,16 @@ package org.example;
 import java.util.Map;
 
 public class Memoization {
+
+    private Memoization (){
+        throw new IllegalStateException("Utility class");
+    }
+
     public static String execute(int[][] matrix,
                                  Map<MatrixIndex, Integer> memoizationDictionary,
                                  MatrixIndex matrixIndex){
         Integer memoizationResult = memoization(matrix, memoizationDictionary, matrixIndex);
-        return ""+memoizationResult;
+        return String.valueOf(memoizationResult);
     }
 
     private static Integer memoization(int[][] matrix,
@@ -24,7 +29,8 @@ public class Memoization {
         if (matrixIndex.getX() == matrix.length - 2) {
 
             result = matrix[matrixIndex.getX()][matrixIndex.getY()] +
-                    min(matrix[matrixIndex.getX() + 1][matrixIndex.getY()], matrix[matrixIndex.getX() + 1][matrixIndex.getY()+1]);
+                    min(matrix[matrixIndex.getX() + 1][matrixIndex.getY()],
+                            matrix[matrixIndex.getX() + 1][matrixIndex.getY()+1]);
 
         }else {
             MatrixIndex downMatrixIndex = new MatrixIndex(matrixIndex.getX() + 1, matrixIndex.getY());
