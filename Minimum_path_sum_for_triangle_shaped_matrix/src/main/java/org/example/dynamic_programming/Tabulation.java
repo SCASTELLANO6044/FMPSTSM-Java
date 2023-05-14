@@ -33,10 +33,11 @@ public class Tabulation {
 
     private static String pathChosen(int[][] table, int[][] originalMatrix){
         List<MatrixIndex> matrixIndexList = new ArrayList<>(table.length);
-        for (int i = 0; i < table.length-1; i++){
+        matrixIndexList.add(new MatrixIndex(0,0));
+        for (int i = 1; i < table.length-1; i++){
             int lessValueItem = Integer.MAX_VALUE;
             int y = -1;
-            for(int j = 0; j <= i; j++){
+            for(int j = matrixIndexList.get(matrixIndexList.size()-1).getY(); j <= matrixIndexList.get(matrixIndexList.size()-1).getY()+1; j++){
                 if (table[i][j] < lessValueItem){
                     lessValueItem = table[i][j];
                     y = j;
