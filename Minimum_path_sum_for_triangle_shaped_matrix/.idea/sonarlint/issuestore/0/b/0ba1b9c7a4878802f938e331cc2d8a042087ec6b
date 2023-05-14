@@ -1,0 +1,31 @@
+
+q
+java:S11928"ODefine a constant instead of duplicating this literal ": Tabulation:
+" 4 times.(‚“¼şÿÿÿÿ8½Ñ°Ü1
+m
+java:S11925"PDefine a constant instead of duplicating this literal ": Memoization:
+" 4 times.(üƒ‰8½Ñ°Ü1
+‹
+java:S11926"iDefine a constant instead of duplicating this literal "****************************************" 4 times.(İ§¬üÿÿÿÿ8¾Ñ°Ü1
+†
+java:S11929"jDefine a constant instead of duplicating this literal "*****************************************" 4 times.(Ê¼†08¾Ñ°Ü1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(œû¿Ø8åÑ°Ü1
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(üƒ‰8íÑ°Ü1
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8íÑ°Ü1
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(‚“¼şÿÿÿÿ8îÑ°Ü1
+T	java:S1069"9Replace this use of System.out or System.err by a logger.(Ê¼†08îÑ°Ü1
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(üƒ‰8ïÑ°Ü1
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8ïÑ°Ü1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(‚“¼şÿÿÿÿ8ïÑ°Ü1
+T	java:S106A"9Replace this use of System.out or System.err by a logger.(Ê¼†08ïÑ°Ü1
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(Ù›ÕÉ8ñÑ°Ü1
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8ñÑ°Ü1
+T	java:S106K"9Replace this use of System.out or System.err by a logger.(µ¤¿/8òÑ°Ü1
+T	java:S106L"9Replace this use of System.out or System.err by a logger.(Ê¼†08òÑ°Ü1
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(Ù›ÕÉ8óÑ°Ü1
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8óÑ°Ü1
+T	java:S106S"9Replace this use of System.out or System.err by a logger.(µ¤¿/8óÑ°Ü1
+T	java:S106T"9Replace this use of System.out or System.err by a logger.(Ê¼†08óÑ°Ü1
+ã
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 68 to 64, Complexity from 15 to 14, Nesting Level from 3 to 2, Number of Variables from 20 to 6.(œû¿Ø8ôÑ°Ü1
