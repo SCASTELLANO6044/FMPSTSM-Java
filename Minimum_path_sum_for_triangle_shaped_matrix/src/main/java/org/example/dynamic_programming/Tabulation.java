@@ -38,7 +38,7 @@ public class Tabulation {
             int lessValueItem = Integer.MAX_VALUE;
             int y = -1;
             for(int j = matrixIndexList.get(matrixIndexList.size()-1).getY(); j <= matrixIndexList.get(matrixIndexList.size()-1).getY()+1; j++){
-                if (table[i][j] < lessValueItem){
+                if (table[i][j] <= lessValueItem){
                     lessValueItem = table[i][j];
                     y = j;
                 }
