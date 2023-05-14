@@ -53,15 +53,15 @@ public class Main {
                     System.out.println(file + ": Memoization:\n" + memoization);
                     System.out.println("****************************************");
                     String tabulation = Tabulation.execute(matrix);
-                    System.out.println(file + "Tabulation:\n"+ tabulation);
+                    System.out.println(file + ": Tabulation:\n"+ tabulation);
                     System.out.println("*****************************************");
                 } else if (mem) {
                     String memoization = Memoization.execute(matrix);
-                    System.out.println(file + "Memoization:\n" + memoization);
+                    System.out.println(file + ": Memoization:\n" + memoization);
                     System.out.println("****************************************");
                 } else if (tab){
                     String tabulation = Tabulation.execute(matrix);
-                    System.out.println(file + "Tabulation:\n"+ tabulation);
+                    System.out.println(file + ": Tabulation:\n"+ tabulation);
                     System.out.println("*****************************************");
                 }
             }
@@ -72,15 +72,15 @@ public class Main {
                 System.out.println(path + ": Memoization:\n" + memoization);
                 System.out.println("****************************************");
                 String tabulation = Tabulation.execute(matrix);
-                System.out.println(path + "Tabulation:\n"+ tabulation);
+                System.out.println(path + ": Tabulation:\n"+ tabulation);
                 System.out.println("*****************************************");
             } else if (mem) {
                 String memoization = Memoization.execute(matrix);
-                System.out.println(path + "Memoization:\n" + memoization);
+                System.out.println(path + ": Memoization:\n" + memoization);
                 System.out.println("****************************************");
             } else if (tab){
                 String tabulation = Tabulation.execute(matrix);
-                System.out.println(path + "Tabulation:\n"+ tabulation);
+                System.out.println(path + ": Tabulation:\n"+ tabulation);
                 System.out.println("*****************************************");
             }
 
