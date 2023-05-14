@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.dynamic_programming.Memoization;
+import org.example.dynamic_programming.Tabulation;
+import org.example.utils.input.FileInputReader;
+
 import java.io.IOException;
 
 public class Main {

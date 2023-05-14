@@ -1,4 +1,6 @@
-package org.example;
+package org.example.dynamic_programming;
+
+import org.example.utils.MatrixIndex;
 
 import java.util.ArrayList;
 import java.util.HashMap;
