@@ -7,7 +7,7 @@ public class Switches {
     }
 
     public static void help(){
-        System.out.println("usage: NumberOfPaths.jar [-h] [-d [DIRECTORY] | -f [FILE]] [-sm | -st | -check] [-t]\n\n" +
+        System.out.println("usage: FMPSTSM.jar [-h] [-d [DIRECTORY] | -f [FILE]] [-sm | -st | -check] [-t]\n\n" +
                 "optional arguments:\n" +
                 "    -h, --help                                  Show this help message and exit\n" +
                 "    -d [DIRECTORY], --directory [DIRECTORY]     Process many files in a directory\n" +

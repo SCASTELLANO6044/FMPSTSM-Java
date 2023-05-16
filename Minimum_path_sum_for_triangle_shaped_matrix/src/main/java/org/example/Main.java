@@ -49,38 +49,62 @@ public class Main {
             for(String file : files){
                 int [][] matrix = FileInputReader.readMatrixFromFile(path+file);
                 if(both){
+                    long startTime = System.currentTimeMillis();
                     String memoization = Memoization.execute(matrix);
                     System.out.println(file + ": Memoization:\n" + memoization);
+                    long finalTime = System.currentTimeMillis() - startTime;
+                    System.out.println("Time: " + finalTime + " ms");
                     System.out.println("****************************************");
+                    startTime = System.currentTimeMillis();
                     String tabulation = Tabulation.execute(matrix);
                     System.out.println(file + ": Tabulation:\n"+ tabulation);
+                    finalTime = System.currentTimeMillis() - startTime;
+                    System.out.println("Time: " + finalTime + " ms");
                     System.out.println("*****************************************");
                 } else if (mem) {
+                    long startTime = System.currentTimeMillis();
                     String memoization = Memoization.execute(matrix);
                     System.out.println(file + ": Memoization:\n" + memoization);
+                    long finalTime = System.currentTimeMillis() - startTime;
+                    System.out.println("Time: " + finalTime + " ms");
                     System.out.println("****************************************");
                 } else if (tab){
+                    long startTime = System.currentTimeMillis();
                     String tabulation = Tabulation.execute(matrix);
                     System.out.println(file + ": Tabulation:\n"+ tabulation);
+                    long finalTime = System.currentTimeMillis() - startTime;
+                    System.out.println("Time: " + finalTime + " ms");
                     System.out.println("*****************************************");
                 }
             }
         }else {
             int [][] matrix = FileInputReader.readMatrixFromFile(path);
             if(both){
+                long startTime = System.currentTimeMillis();
                 String memoization = Memoization.execute(matrix);
                 System.out.println(path + ": Memoization:\n" + memoization);
+                long finalTime = System.currentTimeMillis() - startTime;
+                System.out.println("Time: " + finalTime + " ms");
                 System.out.println("****************************************");
+                startTime = System.currentTimeMillis();
                 String tabulation = Tabulation.execute(matrix);
                 System.out.println(path + ": Tabulation:\n"+ tabulation);
+                finalTime = System.currentTimeMillis() - startTime;
+                System.out.println("Time: " + finalTime + " ms");
                 System.out.println("*****************************************");
             } else if (mem) {
+                long startTime = System.currentTimeMillis();
                 String memoization = Memoization.execute(matrix);
                 System.out.println(path + ": Memoization:\n" + memoization);
+                long finalTime = System.currentTimeMillis() - startTime;
+                System.out.println("Time: " + finalTime + " ms");
                 System.out.println("****************************************");
             } else if (tab){
+                long startTime = System.currentTimeMillis();
                 String tabulation = Tabulation.execute(matrix);
                 System.out.println(path + ": Tabulation:\n"+ tabulation);
+                long finalTime = System.currentTimeMillis() - startTime;
+                System.out.println("Time: " + finalTime + " ms");
                 System.out.println("*****************************************");
             }
 
