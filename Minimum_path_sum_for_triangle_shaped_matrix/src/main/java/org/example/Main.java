@@ -7,6 +7,7 @@ import org.example.utils.input.FileInputReader;
 import org.example.utils.input.Switches;
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -41,6 +42,7 @@ public class Main {
             Switches.help();
         }
 
+        DecimalFormat df = new DecimalFormat("#.000000");
         if (isDirectory){
             File f = new File(path);
             String[] files = f.list();
@@ -53,27 +55,27 @@ public class Main {
                     String memoization = Memoization.execute(matrix);
                     System.out.println(file + ": Memoization:\n" + memoization);
                     long finalTime = System.currentTimeMillis() - startTime;
-                    System.out.println("Time: " + finalTime + " ms");
+                    System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                     System.out.println("****************************************");
                     startTime = System.currentTimeMillis();
                     String tabulation = Tabulation.execute(matrix);
                     System.out.println(file + ": Tabulation:\n"+ tabulation);
                     finalTime = System.currentTimeMillis() - startTime;
-                    System.out.println("Time: " + finalTime + " ms");
+                    System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                     System.out.println("*****************************************");
                 } else if (mem) {
                     long startTime = System.currentTimeMillis();
                     String memoization = Memoization.execute(matrix);
                     System.out.println(file + ": Memoization:\n" + memoization);
                     long finalTime = System.currentTimeMillis() - startTime;
-                    System.out.println("Time: " + finalTime + " ms");
+                    System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                     System.out.println("****************************************");
                 } else if (tab){
                     long startTime = System.currentTimeMillis();
                     String tabulation = Tabulation.execute(matrix);
                     System.out.println(file + ": Tabulation:\n"+ tabulation);
                     long finalTime = System.currentTimeMillis() - startTime;
-                    System.out.println("Time: " + finalTime + " ms");
+                    System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                     System.out.println("*****************************************");
                 }
             }
@@ -84,27 +86,27 @@ public class Main {
                 String memoization = Memoization.execute(matrix);
                 System.out.println(path + ": Memoization:\n" + memoization);
                 long finalTime = System.currentTimeMillis() - startTime;
-                System.out.println("Time: " + finalTime + " ms");
+                System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                 System.out.println("****************************************");
                 startTime = System.currentTimeMillis();
                 String tabulation = Tabulation.execute(matrix);
                 System.out.println(path + ": Tabulation:\n"+ tabulation);
                 finalTime = System.currentTimeMillis() - startTime;
-                System.out.println("Time: " + finalTime + " ms");
+                System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                 System.out.println("*****************************************");
             } else if (mem) {
                 long startTime = System.currentTimeMillis();
                 String memoization = Memoization.execute(matrix);
                 System.out.println(path + ": Memoization:\n" + memoization);
                 long finalTime = System.currentTimeMillis() - startTime;
-                System.out.println("Time: " + finalTime + " ms");
+                System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                 System.out.println("****************************************");
             } else if (tab){
                 long startTime = System.currentTimeMillis();
                 String tabulation = Tabulation.execute(matrix);
                 System.out.println(path + ": Tabulation:\n"+ tabulation);
                 long finalTime = System.currentTimeMillis() - startTime;
-                System.out.println("Time: " + finalTime + " ms");
+                System.out.println("Time: " + df.format(finalTime / 1000.0) + " s");
                 System.out.println("*****************************************");
             }
 
