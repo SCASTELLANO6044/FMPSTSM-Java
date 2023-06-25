@@ -1,0 +1,41 @@
+
+q
+java:S1192>"ODefine a constant instead of duplicating this literal ": Tabulation:
+" 4 times.(‚“¼şÿÿÿÿ8şäÓŒ1
+i
+java:S1192:"GDefine a constant instead of duplicating this literal "Time: " 8 times.(ùù™–üÿÿÿÿ8şäÓŒ1
+m
+java:S11928"PDefine a constant instead of duplicating this literal ": Memoization:
+" 4 times.(üƒ‰8ÿäÓŒ1
+‹
+java:S1192;"iDefine a constant instead of duplicating this literal "****************************************" 4 times.(İ§¬üÿÿÿÿ8ÿäÓŒ1
+†
+java:S1192A"jDefine a constant instead of duplicating this literal "*****************************************" 4 times.(Ê¼†08ÿäÓŒ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(œû¿Ø8½åÓŒ1
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(üƒ‰8ËåÓŒ1
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ÌåÓŒ1
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8ÍåÓŒ1
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(‚“¼şÿÿÿÿ8ÍåÓŒ1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ÎåÓŒ1
+T	java:S106A"9Replace this use of System.out or System.err by a logger.(Ê¼†08ÏåÓŒ1
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(üƒ‰8ÑåÓŒ1
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ÒåÓŒ1
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8ÔåÓŒ1
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(‚“¼şÿÿÿÿ8ÕåÓŒ1
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8×åÓŒ1
+T	java:S106O"9Replace this use of System.out or System.err by a logger.(Ê¼†08×åÓŒ1
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(Ù›ÕÉ8ÙåÓŒ1
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ÙåÓŒ1
+Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8ÚåÓŒ1
+T	java:S106]"9Replace this use of System.out or System.err by a logger.(µ¤¿/8ÜåÓŒ1
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ÜåÓŒ1
+T	java:S106`"9Replace this use of System.out or System.err by a logger.(Ê¼†08ßåÓŒ1
+U	java:S106d"9Replace this use of System.out or System.err by a logger.(Ù›ÕÉ8âåÓŒ1
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8ãåÓŒ1
+Z	java:S106g"9Replace this use of System.out or System.err by a logger.(İ§¬üÿÿÿÿ8äåÓŒ1
+T	java:S106k"9Replace this use of System.out or System.err by a logger.(µ¤¿/8ååÓŒ1
+Z	java:S106m"9Replace this use of System.out or System.err by a logger.(ùù™–üÿÿÿÿ8æåÓŒ1
+T	java:S106n"9Replace this use of System.out or System.err by a logger.(Ê¼†08çåÓŒ1
+ã
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 93 to 64, Complexity from 15 to 14, Nesting Level from 3 to 2, Number of Variables from 33 to 6.(œû¿Ø8çåÓŒ1
